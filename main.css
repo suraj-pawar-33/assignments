@@ -1,0 +1,81 @@
+#header h1{
+    font-size: 25px;
+}
+
+p{
+    font-size: 12px;
+    color: brown;
+}
+
+#types-of-fish{
+    color: green;
+}
+/*child selector*/
+#main-container > p{
+    color: red;
+}
+
+/*Adjecent selector*/
+#article h3 + p{
+    font-style: ;
+    color: blueviolet;
+}
+/*Attribute selector*/
+span[class]{
+    color: aqua;
+}
+a[href^="http"]{
+    background-color: gray;
+}
+div[id$="ion"]{
+    color: dodgerblue;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: chocolate;
+}
+a:hover{
+    background-color: blueviolet;
+    text-decoration: underline;
+    color: white;
+}
+a:active{
+    background-color: yellow;
+}
+a:visited{
+    color: violet;
+}
+#article p:last-child{
+    background-color: gainsboro;
+}
+
+#article p:first-of-type{
+    background-color: gainsboro;
+}
+
+#article p:nth-child(3){
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p:nth-child(even){
+    background-color: burlywood;
+}
+
+#second p:nth-child(odd){
+    background-color: black;
+    color: white;
+}
+#third{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: red;
+}
+
+#about-us p{
+    align-content: center;
+    letter-spacing: 10px;
+}
+

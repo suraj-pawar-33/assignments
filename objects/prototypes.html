@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>prototype</title>
+                
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: monospace;
+        }
+        h1{
+            margin-left: 20px;
+        }
+        .wrapper{
+            width: 70%;
+            height: auto;
+            background-color: #aaa;
+            margin: 0px auto;
+        }
+        .students {
+            max-width: 96%;
+            margin: 2px auto;
+            padding: 10px;
+            display: flex;
+            background-color: white;
+        }
+        .students > p{
+            flex-grow: 3;
+            flex-basis: 300px;
+        }
+        h3:last-child{
+            background-color: white;
+            color:lightgray;
+            flex-grow: 1;
+            
+        }
+        
+        h3:last-child:hover{
+            color:black;
+        }
+        .students p:nth-of-type(1){
+            font-weight: bold;
+            
+        }
+        .add-student{
+            margin: 20px;
+            padding: 10px;
+            width: 40%;
+            min-height: 200px;
+            background-color: white;
+        }
+        .add-student input{
+            width: 70%;
+            height: 25px;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .btn {
+            padding: 10px;
+            background-color: #888;
+            
+        }
+        .btn:hover{
+            background-color: #333;
+            cursor: pointer;
+        }
+    </style>
+    <body>
+        <div id="wrap" class="wrapper">
+           <div class="add-student">
+                <p>Add students here</p><br/>
+                <label>Roll No.:</label><br/>
+                <input id="roll" type="text" value="01"><br/>
+                <label>Name:</label><br/>
+                <input id="name" type="text" value="name"><br/>
+                <button id = "add-btn" class="btn">ADD</button><br/>
+            </div>
+        </div>
+        
+        
+    <script src="prototypes.js"></script>
+    </body>
+</html>

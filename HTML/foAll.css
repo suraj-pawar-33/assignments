@@ -1,0 +1,145 @@
+
+#content {
+    height: auto;
+    width: 70%;
+    margin: 0px auto;
+}
+
+h1.cust{
+    font-size:60px;
+}
+div.outter{
+    height: auto;
+    width: 90%;
+    margin: 0px auto;
+}
+#inliner h1{
+    color:white;
+    margin: 3px 3px;
+    display: inline-flex;
+    border:2px solid white;
+}
+
+#links a.btn{
+    margin: 3px auto;
+    font-size: 15px;
+    padding: 15px 25px;
+    text-align: center;
+    border: 1px solid gray;
+    background-color: white;
+    display: inline-block;
+}
+
+#links a.btn:link {
+    color: green;
+    
+    text-decoration: none;
+}
+
+#links a.btn:visited {
+    color: darkgreen;
+    
+    text-decoration: none;
+}
+
+#links a.btn:hover {
+    color: greenyellow;
+    
+    border: 3px solid gray;
+    
+}
+
+#links a.btn:active {
+    color: yellow;
+    font-size: 14px;
+    border: 2px solid gray;
+    
+    text-decoration: underline;
+}
+
+
+#table-div table {
+    font-family: arial, sans-serif;
+    /*border-collapse: collapse;*/
+    width: 80%;
+    margin: auto;
+    table-layout: auto;
+    border-spacing: 5px;
+    
+}
+
+#table-div td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#table-div tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#lists div{
+    width: 29%;
+    display: inline-table;
+}
+#lists li:first-child, dt{
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style: none;
+}
+ul{
+    list-style-type: circle;
+}
+
+
+#lists #header-div{
+    width: 100%;
+}
+#header-div ul{
+    list-style: none;
+    background-color: cadetblue;
+    overflow: auto;
+    margin: 0;
+    
+}
+#header li a{
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#header li{
+    float: right; 
+}
+#header li a:hover{
+    background-color: #111111;
+}
+
+.form-div{
+    padding: 10px;
+}
+#forms {
+    display: -webkit-flex;
+    display: flex;
+}
+#forms div{
+    flex: 2;
+    background-color: darkgray;
+}
+
+
+
+
+
+
+
+
+
+
+
+

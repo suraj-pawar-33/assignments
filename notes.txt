@@ -1,0 +1,52 @@
+study
+1. event bubbling 
+2. event capturing
+3. event deligation
+4. differnece btw ES5 and ES6 function
+
+
+playLists to watch:
+
+net ninja Object oriented
+JS introduction - Java brains
+JS Scops and closers - Java brains
+JS objects and Prototypes - Java brains
+JS arrays - stefen grifin
+
+***********************************************************************************
+button- click
+input - change, blur, 
+
+
+input change- the change event or input tag is fired only when the value of the input is changed from the previous value and the input is blured
+
+input blur event - it is fired every time the input is focused out
+
+the kepress event for input - it is fired for every char that is going to be printed or shown inside the input element however it does not fire for the chars that are not going to be printed such as backspace and delete
+
+
+the input event for input - it is fired for every char that is going to be printed but alsobackspace and delete 
+
+but they both does not get fired for cntr, alt, shift, etc
+
+the keup event is fired when any key is pressed and released it includes cntr, shit,alt, as well as printeble keys. it also includes combination of keys. ex. cntr + a, shift + h, etc
+
+
+key down and key up are almost the same and have the same behaviour only with the expetion that key down is foired at the same time the key is pressed and key down also works for chars which are pressed in continouation such as aaaaaaaaaaaaaaa, fffffffffffff, DDDDDD
+
+
+
+ev.target-  is the place wheere the event has actually occured but ev. current target is the place where the event may have occured or not occured but the key thing to not is that event. target might or might not have a ev attached but ev. current target has a event attached
+
+So whenever an event occures it naturally bubbles up to all the ancesters but if you do not want that ev to bubble u then you hae to use ev.stopPropagation.
+
+
+****
+whenever you want to remove an event listener from an element then at the time of adding the event listner you can not use an anonimus function YOU HAVE TO USE A NAMED FUNCTION since the refernces to anonimus finctions are stored indipendently than named functions so can not remove event listners from elements on which you have used anonimus functions for adding events.
+
+
+prevent default - each and every element in the window has a set of default behaviour asociated with events so if you want to stop its default behaviour and implement the custom behaviour then you should us ev.preventDefault
+
+ex- creating your own right click menu
+    when you click on anchor tag.
+    or any keyboard key

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Objects in JS</title>
+        <script src="DOM.js"></script>
+        <style>
+            #content {
+                height: auto;
+                width: 80%;
+                margin: 0px auto;
+                
+            }
+            div.inner {
+                height: auto;
+                width: 48%;
+                margin: 1% 0% 1% 1%;
+                display: inline-table;
+                background-color: cyan;
+            }
+            div.outter {
+                height: auto;
+                width: 100%;
+                margin: 0px auto;
+                background-color: white;
+            }
+            #sub-01 div{
+                height: 40px;
+                width: 40px;
+                border-radius: 40px;
+                margin: 5px 5px;
+                background-color: red;
+                display: inline-block;
+            }
+            button{
+                margin: 2px;
+                display: inline-block
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="content">
+            <h1>Js for beginners</h1>
+            <p>Practice for Document Object Model.</p>
+            <hr>
+            <div id="main" class="outter">
+                <div id="sub-01" class="inner">
+                    <p>Colored Lights</p>
+                    <div></div>
+                </div>
+                <div id="sub-02" class="inner">
+                    <p>Buttons</p>
+                    <form id="firstform" name="form1">
+                        <label for="color1">Give Color</label>
+                        <input type="text" name="color1">
+                    </form><br/>
+                    <button id ="red-btn">ADD RED</button>
+                    <button id ="green-btn">ADD GREEN</button>
+                    <button id ="blue-btn">ADD BLUE</button><br/>
+                    <button id ="change-btn">CHANGE COLOR</button>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Events</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            .wrapper {
+                width: 70%;
+                height: 1000px;
+                padding: 100px;
+                margin: 0px auto;
+                background-color: #eee;
+            }
+            
+            #box {
+                padding: 30px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                width: 30%;
+            }
+            .menu{
+                list-style-type: none;
+                background-color: azure;
+                padding: 0px;
+                width: 100px;
+                border: 1px solid black;
+                border-radius: 3px;
+                box-shadow: 2px 2px 2px #999;
+                position: fixed;
+            }
+            .menu.off {
+                top: -200%;
+                left: -200%;
+            }
+            
+            }
+            .menu-item{
+                padding: 5px;
+                cursor: pointer;
+            }
+            .menu-item:hover {
+                background-color: gainsboro;
+            }
+            .form{
+                padding: 10px;
+                margin: 20px;
+                width: 40%;
+                height: 100px;
+                background-color: cornflowerblue;
+                border-radius: 5px;
+            }
+            input{
+                width: 100%;
+                height: 40px;
+                font-size: 35px;
+                margin-top: 12px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div id="div-1" class="wrapper">
+            <h1>Right-Click Menus</h1>
+            <h2>`contextmenu` Event</h2>
+            <p>Right-click on the text below.</p>
+            <div id="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed alias iusto iure est veritatis ipsum voluptas nesciunt impedit, quam, distinctio nulla illo obcaecati expedita libero, fugiat porro, unde voluptate rem.</div>
+
+            <ul class="menu">
+                <li class="menu-item" id="red">Red Item</li>
+                <li class="menu-item" id="gold">Gold Item</li>
+                <li class="menu-item" id="green">Green Item</li>
+            </ul>
+            <div class="form">
+                <p>keys will be convertd to uppercase</p>
+                <input id="uppCase">
+                <p id="output-uppcase"></p>
+            </div>
+            
+            
+            
+            
+            
+            <script src="rightClick.js"></script>
+ </div>
+        
+        
+    </body>
+</html>
